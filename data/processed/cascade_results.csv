@@ -1,0 +1,4 @@
+"strategy","with_tb","sample_obtained","true_pos","false_pos","tb_started","false_started","tb_missed","yield_pct","prob_tb_treated"
+"Sputum Xpert Ultra (lab)",100,850,76.5,15.3,65.025,13.005,34.975,9.18,0.65025
+"Tongue swab, near-POC test",100,1000,66,13.5,62.7,12.825,37.3,7.95,0.627
+"Pooled sputum (lab)",100,850,73.95,15.3,65.076,13.464,34.924,8.925,0.65076
