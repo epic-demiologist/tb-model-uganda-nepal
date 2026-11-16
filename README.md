@@ -4,7 +4,7 @@ An R project and Shiny dashboard exploring how **tongue-swab testing**, **commun
 
 > Learning project by **Bikram Kumar Singh** (MSc Epidemiology, Advanced Biostatistics, LMU Munich). Simplified models built from open WHO data and published estimates, intended for discussion and not for policy decisions.
 
-**Live dashboard:** `https://<your-account>.shinyapps.io/tb-models/` *(add after deployment)*
+**Live dashboard:** `   **Live dashboard:** https://bikramsingh.shinyapps.io/tb-models/` 
 
 ## What is inside
 
