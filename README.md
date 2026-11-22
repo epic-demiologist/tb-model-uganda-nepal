@@ -2,7 +2,7 @@
 
 An R project and Shiny dashboard exploring how **tongue-swab testing**, **community screening** and **short-course TB preventive therapy (3HP)** could change tuberculosis outcomes in Uganda and Nepal.
 
-> Learning project by **Bikram Kumar Singh** (MSc Epidemiology, Advanced Biostatistics, LMU Munich). Simplified models built from open WHO data and published estimates, intended for discussion and not for policy decisions.
+> Learning project by **Bikram Kumar Singh** (MSc Epidemiology, Advanced Biostatistics, LMU Munich). Simplified models built from open WHO data and published estimates, intended for discussion.
 
 **Live dashboard:** `https://<bikramsingh>.shinyapps.io/tb-models/` *(add after deployment)*
 
@@ -19,7 +19,7 @@ An R project and Shiny dashboard exploring how **tongue-swab testing**, **commun
 
 ```
 tb-model-uganda-nepal/
-├── run_all.R                 # reproduces everything (≈20–30 min)
+├── run_all.R                 
 ├── R/
 │   ├── 01_prepare_data.R     # WHO data → tidy tables, calibration targets
 │   ├── 02_cascade_model.R    # diagnostic cascade + tornado
@@ -27,13 +27,13 @@ tb-model-uganda-nepal/
 │   └── 04_scenarios.R        # projections 2027–2035, cases/deaths averted
 ├── app/
 │   ├── app.R                 # Shiny dashboard
-│   ├── model_functions.R     # cascade + transmission model (shared)
+│   ├── model_functions.R     # cascade + transmission model 
 │   ├── methods.md            # methods, parameters, limitations, references
 │   └── data/                 # processed results used by the app
 ├── data/
 │   ├── raw/                  # WHO CSV files (downloaded 15 Nov 2026)
 │   └── processed/            # outputs of R/ scripts
-└── deploy.R                  # deploy to shinyapps.io
+└── deploy.R                  
 ```
 
 ## Run it
@@ -46,11 +46,6 @@ source("run_all.R")          # optional: re-runs data prep, calibration and scen
 shiny::runApp("app")         # launch the dashboard (uses precomputed results in app/data)
 ```
 
-## Deploy to shinyapps.io
-
-1. Create a free account at <https://www.shinyapps.io>, then go to **Account → Tokens → Show** and copy the `rsconnect::setAccountInfo(...)` command.
-2. Run that command once in R.
-3. Run `source("deploy.R")`. The app is published as `tb-models`.
 
 ## Key findings (point estimates; see the dashboard for uncertainty)
 
@@ -65,8 +60,4 @@ shiny::runApp("app")         # launch the dashboard (uses precomputed results in
 - 3HP Options trial (NIH R01HL144406); Sterling TR et al., *N Engl J Med* 2011.
 - Ragonnet R et al., *Epidemics* 2017; Andrews JR et al., *Clin Infect Dis* 2012; Tiemersma EW et al., *PLoS One* 2011; Menzies NA et al., *N Engl J Med* 2018.
 
-Full parameter table and limitations: [`app/methods.md`](app/methods.md).
 
-## License
-
-Code: MIT. WHO data are subject to WHO's terms of use.
