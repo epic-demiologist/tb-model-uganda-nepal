@@ -29,7 +29,7 @@ ui <- page_navbar(
     selectInput("iso", "Country", choices = c(Uganda = "UGA", Nepal = "NPL")),
     card_note("Data: WHO Global TB Programme database, downloaded 15 Nov 2026. Model inputs from published studies; see Methods."),
     hr(),
-    card_note("Built by Bikram Kumar Singh (MSc Epidemiology, LMU Munich) as a learning project. Simplified models for discussion, not policy advice.")
+    card_note("Conceptualization, litrature reivew and implementation done by Bikram Kumar Singh (MSc Epidemiology, LMU Munich), about 80% R codes written by Claude Sonnet 5.5 especially while deploying models;  as a learning project. Simplified models for discussion, not policy advice.")
   ),
 
   nav_panel("Overview",
